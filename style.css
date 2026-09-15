@@ -69,5 +69,9 @@ body::after{
 .badge {
     /*estiliza a etiqueta/badge*/
     display: inline-block;
-    
+    background: rgba(220, 38, 38, 0.2);
+    color: #f87171;
+    border: 1px solid rgba(248, 113, 113, 0.3);
+    padding: 6px 16px;
+
 }
