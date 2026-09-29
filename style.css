@@ -47,17 +47,17 @@ body::after{
     /*estiliza o cartão principal*/
     position: relative;
     z-index: 1;
-    background: rgbs(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border: 1px solid rgba(255, 255, 255, 0.12);
     padding: 40px 32px;
     border-radius: 24px;
     max-width: 420px;
-    width: 905;
+    width: 90%;
     text-align: center;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-    transition: transform 0.35 ease, border-color 0.3s ease;
+    transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .card:hover{
@@ -88,7 +88,7 @@ h1 {
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 12px;
-    background: linear-gradient(135deg, #ffffff 0%, #cbd5e1);
+    background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -117,12 +117,23 @@ p {
     font-weight: 700;
     font-size: 1rem;
     box-shadow:  0 0 20px rgba(220, 38, 38, 0.35);
-    transition: all 0.35 ease;
+    transition: all 0.3s ease;
 }
 
 .btn:hover{
     /*Efeito ao passar o mouse no botão*/
     background: #ef4444;
-    box-shadow:  0 0 25px rgba(239, 68, 68, 0.5);
+    box-shadow:  0 0 25px rgba(239, 68, 68, 0.6);
     transform: scale(1.02);
+}
+
+/* Segunda parte do nosso css */
+
+.conteudo{
+    /* define o tamanho e a posição da nova sessão*/
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
 }
