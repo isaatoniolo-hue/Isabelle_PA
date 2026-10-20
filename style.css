@@ -179,3 +179,10 @@ p {
     /*altera a cor da borda para vermelho*/
     border-color: #dc2626;
 }
+
+.info-card h3{
+    /*Estiliza os titulos GIT e GITHUB*/
+    color: #f87171;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
