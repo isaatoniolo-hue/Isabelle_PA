@@ -203,4 +203,14 @@ p {
         quando a tela for pequena*/
         grid-template-columns: 1fr;
     }
+
+    .conteudo h2{
+        /**diminui o tamanho do titulo no celualr*/
+        font-size: 1.6rem;
+    }
+
+    .info-card{
+        /*Ajusta o espaçamento interior dos cartões*/
+        padding: 22px;
+    }
 }
