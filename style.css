@@ -165,9 +165,17 @@ p {
     /*Define o espaçamento interno*/
     padding: 30px;
 
-    /*Alinha oconteudo a esquerda*/
+    /*Alinha o conteudo a esquerda*/
     text-align: left;
 
     /*Adiciona uma transição suave*/
     transition: 0.3s ease;
+}
+
+.info-card:hover{
+    /*eleva o cartão quando o mouse passa obre ele*/
+    transform: translateY(-5px);
+
+    /*altera a cor da borda para vermelho*/
+    border-color: #dc2626;
 }
