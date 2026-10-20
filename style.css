@@ -191,3 +191,8 @@ p {
     /*Ajusta o espaçamento entre os paragrafos*/
     margin-bottom: 12px;
 }
+
+.info-card p:last-child{
+    /*Remove o espaço abaixo do ultimo paragrafo*/
+    margin-bottom: 0;
+}
