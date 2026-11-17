@@ -14,8 +14,21 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+   
+    /* ALTERAÇÃO: permite que a pagina tenha rolagem */
+    overflow-x: hidden;
+    overflow-y: auto;
+
     position: relative;
+
+    /*NOVO: oraniza os elemnetos um abaixo do outro*/
+    flex-direction: column;
+
+    /* NOVO: cria espaço entre o cartão e a nova seção*/
+    gap: 60px;
+
+    /*NOVO: adiciona um espaçamento nas bordas da página*/
+    padding: 80px 20px;
 }
 
 body::before, body::after{
@@ -58,6 +71,9 @@ body::after{
     text-align: center;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, border-color 0.3s ease;
+
+    /* NOVO: impede que o cartão seja comprimido*/
+    flex-shrink: 0;
 }
 
 .card:hover{
@@ -213,4 +229,12 @@ p {
         /*Ajusta o espaçamento interior dos cartões*/
         padding: 22px;
     }
+}
+
+/* PARTE 3: ESTILOS DAS NOVAS FUNCIONALIDADES
+Coloca os novos elementos acima das luzes decorativas do fundo. */
+.menu-estudo, .rodape-estudo{
+    position: relative;
+    z-index: 1;
+    text-align: center;
 }
